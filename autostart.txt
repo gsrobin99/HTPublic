@@ -1,0 +1,7 @@
+@xscreensaver -no-splash
+@~/.config/lxsession/LXDE-pi/autostart
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@point -rpi
+@midori -e Fullscreen https://buildinglink.com
+

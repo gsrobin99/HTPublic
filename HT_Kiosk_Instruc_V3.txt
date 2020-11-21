@@ -1,0 +1,52 @@
+OS of April 2020, Ver 10, Buster,  
+
+To build Micro SD card, =>8GB, class 10, from blank install:
+
+On a PC install RaspberryPi Imager from the RaspberryPi web site.
+
+Run Imager on PC to install the full 32bit Raspian OS onto a MicroSD card of at least 8GB
+
+Insert MicroSD into RaspberryPi and power it up, if it reboots and does not display, wait 5 minutes and reboot (remove and insert power connector)
+
+Follow directions on the screen to prepare the RaspberryPi system, setting location, WiFi and update software. Upper and lower case matters.
+
+sudo apt install xscreensaver  -y
+sudo apt install midori  -y
+
+Create Folders
+
+Using File Manager program Make hidden files visible
+
+In .config  create      folder lxsession
+In lxsession create  folder LXDE-pi
+In LXDE-pi create new file      autostart 
+Copy autostart text below to file autostart using text editor
+
+@xscreensaver -no-splash
+@~/.config/lxsession/LXDE-pi/autostart
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@point -rpi
+@midori -e Fullscreen  https://www.buildinglink.com 
+
+Sudo crontab –e.  (Use nano editor), Reboot @2am:	* 2 * * * sudo 
+/sbin/reboot now 
+
+====================================================================
+Upper left Raspberry icon, Menu  Preferences Raspberry Pi: 
+
+* wait for network and in interfaces check VNC
+* Screensaver in Mode choose disable
+====================================================================
+In upper right, left click on network icon, choose WiFi off,   Right click on network icon, choose Wireless & Wired Network Settings, eth0 and define ip address (10.1.10.n) to make it a static address.
+====================================================================
+Once running, To switch to not full screen click icon in upper right of browser which will reveal itself when the mouse pointer gets close. To switch to full screen click on icon with arrows pointing to corners.
+====================================================================
+Reboot and login. Check box to remember username and password
+Reboot to verify all is working
+
+Cat /etc/os-release
+should be 10  Buster
+21 November 2020
+
+
