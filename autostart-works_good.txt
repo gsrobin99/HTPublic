@@ -1,0 +1,12 @@
+@xscreensaver -no-splash
+@~/.config/lxsession/LXDE-pi/autostart
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@point -rpi
+#@midori -e Fullscreen
+#Midori is good but not great
+#@chromium-browser --kiosk --noerrdialogs --disable-infobars https://buildinglink.com/v2/mgmt/eventlog/tenantdisplay.aspx
+#works @chromium-browser --noerrdialogs --disable-infobars --start-fullscreen https://buildinglink.com/v2/mgmt/eventlog/tenantdisplay.aspx
+#Kiosk mode works but requires alt F4
+#Incognito does not remember sign in
+@chromium-browser --kiosk https://buildinglink.com/v2/mgmt/eventlog/tenantdisplay.aspx
