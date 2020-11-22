@@ -1,0 +1,65 @@
+To build Micro SD card, =>8GB, class 10, from blank install:
+
+On a PC install RaspberryPi Imager program from the RaspberryPi web site.
+
+Run Imager on PC to install the full 32bit Raspian OS onto a MicroSD card of at least 8GB
+
+Insert MicroSD into RaspberryPi and power it up, if it reboots and does not display, wait 5 minutes and reboot (remove and insert power connector)
+
+Follow directions on the screen to prepare the RaspberryPi system, setting location, WiFi and update software. 
+
+Upper and lower case matters.
+
+Open a Terminal window on top left Launch Task bar
+
+$ git clone https://github.com/gsrobin99/HTPublic
+$ git clone https://buildinglink.com
+
+Using File Manager on top left Launch Task bar
+View, make hidden files visible
+
+Create Folders:
+
+In .config  create folder lxsession
+In lxsession create  folder LXDE-pi
+In LXDE-pi create new file autostart 
+Copy autostart text below to file autostart using text editor
+
+@xscreensaver -no-splash
+@~/.config/lxsession/LXDE-pi/autostart
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@point -rpi
+@midori -e Fullscreen https://www.buildinglink.com 
+
+Using the Terminal window:
+
+$ sudo apt install xscreensaver -y
+$ sudo apt install midori -y
+$ Sudo crontab –e.  (Use nano editor),to Reboot @2am:	
+
+* 2 * * * sudo /sbin/reboot now 
+
+Ctrl O  to write file, enter to say yes, ctrl x to exit
+
+Open Upper left Raspberry icon, Menu  Preferences Raspberry Pi: 
+
+select wait for network and in interfaces check VNC
+Open Upper left Raspberry icon, Menu  Preferences Raspberry Pi: 
+
+select Screensaver, in Mode choose disable
+
+====================================================================
+In upper right, left click on network icon, choose WiFi off,   Right click on network icon, choose Wireless & Wired Network Settings, eth0 and define ip address (10.1.10.n) to make it a static address.
+====================================================================
+Once running, To switch to not full screen click icon in upper right of browser which will reveal itself when the mouse pointer gets close. To switch to full screen click on icon with arrows pointing to corners.
+====================================================================
+Reboot and login. Check box to remember username and password
+Reboot to verify all is working
+
+Cat /etc/os-release
+should be 10  Buster
+
+22 November 2020
+
+
