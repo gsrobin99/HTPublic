@@ -16,7 +16,6 @@ Upper and lower case matters.
 a. Open a Terminal window on top left Launch Task bar
 b. Enter the following: the $ sign is shown in the Terminal window, you enter everything after the $
 i. $ git clone https://github.com/gsrobin99/HTPublic
-ii. $ git clone https://buildinglink.com               (error is OK)
 
 c. Using File Manager on top left Launch Task bar
 i. View, show hidden files visible
@@ -30,20 +29,21 @@ ii. In lxsession create  folder LXDE-pi
 iii. In LXDE-pi create new file      autostart 
 iv. Open autostart using a text editor, right click on autostart
 v. Copy autostart text below to file autostart 
-1. @xscreensaver -no-splash
-2. @~/.config/lxsession/LXDE-pi/autostart
-3. @lxpanel --profile LXDE-pi
-4. @pcmanfm --desktop --profile LXDE-pi
-5. @point -rpi
-6. @midori -e Fullscreen  https://www.buildinglink.com 
+
+@xscreensaver -no-splash
+@~/.config/lxsession/LXDE-pi/autostart
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@point -rpi
+@midori -e Fullscreen  https://www.buildinglink.com 
 
 7. Install programs on RaspberryPi
 Follow instructions in the text and copy/paste commands as an aide to accuracy
 a. Using the Terminal window: copy from text to terminal window, in editor Select text then Copy text, in Terminal window hold the CTRL + Shift + v keys to paste
 b. $ sudo apt install xscreensaver  -y
 c. $ sudo apt install midori  -y
-d. $ sudo crontab ?e  (Use nano editor), 
-e. To cause RaspberryPi to Reboot @2am: Enter at $ * 2 * * * sudo /sbin/reboot nowÿ
+d. $ sudo crontab -e  (Use nano editor), 
+e. To cause RaspberryPi to Reboot @2am: Enter at $ * 2 * * * sudo /sbin/reboot nowÃ¿
 f. Ctrl O  to write file, Enter to say yes, ctrl x to exit
 
 8. Reboot
