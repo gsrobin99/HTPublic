@@ -10,7 +10,7 @@ To build Micro SD card, => 8GB, class 10, from blank
 
   a. setting location, New York
   b. WiFi (Might take a minute to connect)
-  c. update software (takes time). 
+  c. update software (takes time). sreen blanks
 
 Note   Upper and lower case matters
 
@@ -27,7 +27,7 @@ $ git clone https://github.com/gsrobin99/HTPublic
 6. Create Folders
 
   a. Using File Manager 
-    i. In .config  create      folder lxsession
+    i. In .config  create      folder lxsession    right click for new folder, new file
     ii. In lxsession create  folder LXDE-pi
     iii. In LXDE-pi create new file      autostart 
     iv. Open autostart using a text editor, right click on autostart
@@ -40,6 +40,8 @@ $ git clone https://github.com/gsrobin99/HTPublic
 @point -rpi
 @midori -e Fullscreen -a https://www.buildinglink.com 
 
+     vi. File  then Save
+
 7. Install programs on RaspberryPi
 
 Follow instructions in the text and copy/paste commands as an aide to accuracy
@@ -51,9 +53,10 @@ Follow instructions in the text and copy/paste commands as an aide to accuracy
 " * 2 * * * sudo /sbin/reboot now"
   c. Ctrl O  to write file, Enter to say yes, ctrl x to exit
 
-8. Reboot
+8. Reboot 
 
   a. Open Upper left Raspberry icon, select Logout at bottom of menu, then in window in center of screen select REBOOT
+  b. Open HT_Kiosk_Instruc_V(n).txt in File Manager folder HTPublic to continue with instructions
 
 9. Setup Midori Browser to display BuildingLink screens
 
@@ -61,7 +64,7 @@ a. After the Reboot the display should be Login screen, Login to BuildingLink wi
 b. REBOOT
 c. Open autostart again using a text editor
 d. Change the last line "@midori -e Fullscreen -a https://www.buildinglink.com" to remove the -a
-e. Ctrl O  to write file, Enter to say yes, ctrl x to exit
+e. File Save
 f. REBOOT
 g. Now the display of BuildingLink should take up complete screen
 h. In display  Move pointer to icon in upper right of browser screen which will reveal itself when the mouse pointer gets close. 
