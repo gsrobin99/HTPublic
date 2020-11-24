@@ -10,7 +10,7 @@ To build Micro SD card, => 8GB, class 10, from blank
 
   a. setting location, New York
   b. WiFi (Might take a minute to connect)
-  c. update software (takes time). sreen blanks
+  c. update software (takes time and if screen blanks out tough Shift key to unblank screen)
 
 Note   Upper and lower case matters
 
