@@ -76,7 +76,7 @@ d. Force system to fixed wired IP address
   i. In upper right, left click on network icon, choose WiFi off
   ii Right click on network icon, choose Wireless & Wired Network Settings, eth0 and define ip address (10.1.10.n) to make it a static address. Get n from list below
   iii. REBOOT
-  c. Once running, To switch to not full screen click icon in upper right of browser which will reveal itself when the mouse pointer gets close. To switch to full screen click on icon with arrows pointing to corners.
+c. Once running, To switch to not full screen click icon in upper right of browser which will reveal itself when the mouse pointer gets close. To switch to full screen click on icon with arrows pointing to corners.
 
 24 November 2020
 
