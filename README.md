@@ -1,5 +1,6 @@
 # HTPublic
-# This is the contents of the autostart file needed for HT Kiosks
+## This is the contents of the autostart file needed for HT Kiosks
+
 OS of April 2020, Ver 10, Buster,  
 
 To build Micro SD card, =>8GB, class 10, from blank install:
@@ -71,6 +72,5 @@ b. Reboot and l
 c. Once running, To switch to not full screen click icon in upper right of browser which will reveal itself when the mouse pointer gets close. To switch to full screen click on icon with arrows pointing to corners.
 
 23 November 2020
-
 
 
