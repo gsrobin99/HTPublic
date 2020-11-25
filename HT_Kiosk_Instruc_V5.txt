@@ -10,14 +10,14 @@ To build Micro SD card, => 8GB, class 10, from blank
 
   a. setting location, New York
   b. WiFi (Might take a minute to connect)
-  c. update software (takes time and if screen blanks out tough Shift key to unblank screen)
+  c. update software (takes time and if screen blanks out touch Shift key to unblank screen)
 
 Note   Upper and lower case matters
 
 5. Copy Instructions and text to RaspberryPi
 
   a. Open a Terminal window on top left Launch Task bar
-  b. Enter the following: the $ sign is shown in the Terminal window, you enter everything after the $
+  b. Enter the following command: the $ sign is shown in the Terminal window, you enter everything after the $
 $ git clone https://github.com/gsrobin99/HTPublic
   c. Using File Manager on top left Launch Task bar
     i. View, show hidden files visible
@@ -27,7 +27,7 @@ $ git clone https://github.com/gsrobin99/HTPublic
 6. Create Folders
 
   a. Using File Manager 
-    i. In .config  create      folder lxsession    right click for new folder, new file
+    i. In .config  create folder lxsession    right click for new folder or new file
     ii. In lxsession create  folder LXDE-pi
     iii. In LXDE-pi create new file      autostart 
     iv. Open autostart using a text editor, right click on autostart
